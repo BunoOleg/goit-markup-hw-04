@@ -112,6 +112,7 @@ img {
 .icon-mail,
 .icon-tel {
   margin-right: 10px;
+  fill: var(--primery-text-color);
 }
 .link-icon:hover .icon-tel,
 .link-icon:focus .icon-tel,
@@ -318,23 +319,34 @@ img {
 /*Постоянные клиенты*/
 .clients-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 .clients-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.clients-link {
+  display: flex;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
-  margin-right: 30px;
   width: 170px;
   height: 92px;
+  align-items: center;
+  justify-content: center;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid #2196f3;
 }
 .client-icon {
+  display: block;
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: #2196f3;
 }
 /*Футер*/
 .footer {
@@ -471,9 +483,9 @@ img {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
-.portfolio-item:hover .link,
-.portfolio-item:focus .link {
-  box-sizing: border-box;
+.img-list .link-card:hover,
+.img-list .link-card:focus {
+  fill: currentColor;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
