@@ -483,6 +483,9 @@ img {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
+.link-card {
+  display: block;
+}
 .link-card:hover,
 .link-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
