@@ -323,9 +323,11 @@ img {
 }
 .clients-item {
   display: flex;
+  display: block;
 }
 
 .clients-link {
+  outline: none;
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -336,7 +338,7 @@ img {
 }
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
 }
 .client-icon {
   display: block;
@@ -344,9 +346,9 @@ img {
   height: 60px;
   fill: #afb1b8;
 }
-.client-icon:hover,
-.client-icon:focus {
-  fill: #2196f3;
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
+  fill: var(--accent-color);
 }
 /*Футер*/
 .footer {
@@ -486,6 +488,7 @@ img {
 .link-card {
   display: block;
   text-decoration: none;
+  outline: none;
 }
 .link-card:hover,
 .link-card:focus {
