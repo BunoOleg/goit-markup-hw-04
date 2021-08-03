@@ -485,6 +485,7 @@ img {
 }
 .link-card {
   display: block;
+  text-decoration: none;
 }
 .link-card:hover,
 .link-card:focus {
